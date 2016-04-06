@@ -1,0 +1,91 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Citation key:</strong>
+  <%= @book.citation_key %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @book.publisher %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @book.year %>
+</p>
+<% if not @book.volume.empty? %>
+  <p>
+    <strong>Volume:</strong>
+    <%= @book.volume %>
+  </p>
+<% end %>
+
+<% if not @book.series.empty? %>
+  <p>
+    <strong>Series:</strong>
+    <%= @book.series %>
+  </p>
+<% end %>
+
+<% if not @book.address.empty? %>
+  <p>
+    <strong>Address:</strong>
+    <%= @book.address %>
+  </p>
+<% end %>
+
+<% if not @book.edition.empty? %>
+  <p>
+    <strong>Edition:</strong>
+    <%= @book.edition %>
+  </p>
+<% end %>
+
+<% if not @book.month.empty? %>
+  <p>
+    <strong>Month:</strong>
+    <%= @book.month %>
+  </p>
+<% end %>
+
+<% if not @book.note.empty? %>
+  <p>
+    <strong>Note:</strong>
+    <%= @book.note %>
+  </p>
+<% end %>
+<% if not @book.key.empty? %>
+  <p>
+    <strong>Key:</strong>
+    <%= @book.key %>
+  </p>
+<% end %>
+<h3>In BibTeX format:</h3>
+
+<p>@Book{<%= @book.citation_key %>,<br>
+  author = "<%= @book.author %>", <br>
+  title = "<%= @book.title %>",<br>
+  publisher = "<%= @book.publisher %>",<br>
+  year = <%= @book.year %>, <br>
+  <% if not @book.volume.empty? %> volume = "<%= @book.volume %>", <br>  <% end %>
+  <% if not @book.series.empty? %> series = "<%= @book.series %>", <br> <% end %>
+  <% if not @book.address.empty? %> address = "<%= @book.address %>", <br> <% end %>
+  <% if not @book.edition.empty? %> edition = "<%= @book.edition %>", <br> <% end %>
+  <% if not @book.month.empty? %> month = "<%= @book.month %>", <br> <% end %>
+  <% if not @book.note.empty? %> note = "<%= @book.note %>", <br> <% end %>
+  <% if not @book.key.empty? %> key = "<%= @book.key %>", <br> <% end %>
+}
+</p>
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
