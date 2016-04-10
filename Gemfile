@@ -33,7 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.0'
   gem 'sqlite3'
   gem 'byebug'
   gem 'cucumber-rails', :require => false
@@ -49,6 +49,10 @@ group :development do
   gem 'spring'
 end
 group :test do
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'simplecov', require: false
   gem 'coveralls', require: false
 end
 group :production do
