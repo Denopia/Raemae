@@ -8,6 +8,6 @@ script:
 - bundle exec rspec -fd spec/
 deploy:
   provider: heroku
-  app: infinite-journey-12122
+  app: raemae
   api_key:
     secure: RtwFs3Ws77cXbtL0pfWIrTaatY9ybVfNGyXP7gcrw0jYY1KheCVp14bRbphTjpLN3TDNkoJ00Ep+Pj9UyLZBhREsdGG6Roo+0hWdl0fJamdq2GfIcLONg9gwmLYz7oeXzVqxfw1diYNx3Rtep86XB7PgD4+7P7w3PxLrndMd9hvRBJEf+XW2AfqJ7ZkYVlefyr+tWi9k1gcvY/ikKMqmbXiK7QjhaZdwERCYJFOBioipWBn4e45/HFmrDAWAOF+cGfN6W3U47o2Iyt0ENjh0uFKbmuPen+qlyRXpAGUK+UG2AVvcp70iSXIMVA1XLli04gXE1pMcgkGc88vRE/EP5CitEsCR+SnXPuQyK06dQNrT1QzIcEsqblbxJ+Dko0y2z3FFSP6pLmm1tMhNkexZHtfyNJx367/eblpkh4Y2zC0v+TGbi2XgdtV7rdCeGr5qtFPiWNxrYiu1D7+zGmpBvqPwz567VBoyqrdFEZGvSAdFB///pvHqRmB8JT+gQ6+L5UPar+/3EtGeOM/cPPyZHwCx4o5OcaMb+AUpBiwxe7etltod+dTPqcMEI5T5v8bkYrUzxgouHca77kBlkeydZlnqB8h87OeuDLf6j0QZpOyr6931Yjf4nxD10qQFWA4TYljE8WkAsqXMJDEO7ReT5hIwq6vfkO7snicRPc1Ne/0=
