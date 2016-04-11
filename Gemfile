@@ -52,7 +52,7 @@ group :test do
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'launchy'
-  gem 'simplecov', require: false
+  gem 'simplecov', require: false, :group => :test
   gem 'coveralls', require: false
 end
 group :production do

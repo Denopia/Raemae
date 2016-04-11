@@ -1,8 +1,7 @@
 require 'simplecov'
 SimpleCov.start('rails')
 
-require 'coveralls'
-Coveralls.wear!
+
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV['RAILS_ENV'] ||= 'test'
@@ -62,3 +61,6 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 end
+
+require 'coveralls'
+Coveralls.wear!
