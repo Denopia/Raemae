@@ -69,6 +69,6 @@ class InproceedingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def inproceeding_params
-      params.require(:inproceeding).permit(:citation_key, :autor, :title, :booktitle, :year, :editor, :pages, :organization, :address, :month, :note, :key)
+      params.require(:inproceeding).permit(:citation_key, :author, :title, :booktitle, :year, :editor, :pages, :organization, :address, :month, :note, :key)
     end
 end
