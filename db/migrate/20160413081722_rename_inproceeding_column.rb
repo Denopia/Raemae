@@ -5,4 +5,3 @@ class RenameInproceedingColumn < ActiveRecord::Migration
     end
   end
 end
-raoi
