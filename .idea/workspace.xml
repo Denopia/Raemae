@@ -62,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/db/migrate/20160413080938_change_inproceeding_column_year_to_integer.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.06993007">
-              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+              <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -965,7 +965,7 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20160413080938_change_inproceeding_column_year_to_integer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.06993007">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
           <folding />
         </state>
       </provider>
