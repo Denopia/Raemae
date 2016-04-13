@@ -1,16 +1,62 @@
+<h1>All references in BibTeX format:</h1>
+
 <% @books.each do |book| %>
-  <p>@Book{<%= book.citation_key %>,<br>
-    author = "<%= book.author %>", <br>
-    title = "<%= book.title %>",<br>
-    publisher = "<%= book.publisher %>",<br>
-    year = <%= book.year %>, <br>
-    <% if not book.volume.empty? %> volume = "<%= book.volume %>", <br>  <% end %>
-    <% if not book.series.empty? %> series = "<%= book.series %>", <br> <% end %>
-    <% if not book.address.empty? %> address = "<%= book.address %>", <br> <% end %>
-    <% if not book.edition.empty? %> edition = "<%= book.edition %>", <br> <% end %>
-    <% if not book.month.empty? %> month = "<%= book.month %>", <br> <% end %>
-    <% if not book.note.empty? %> note = "<%= book.note %>", <br> <% end %>
-    <% if not book.key.empty? %> key = "<%= book.key %>", <br> <% end %>
-    }
-  </p>
+    <p>@Book{<%= book.citation_key %>,<br>
+      author = "<%= book.author %>", <br>
+      title = "<%= book.title %>",<br>
+      publisher = "<%= book.publisher %>",<br>
+      year = <%= book.year %>, <br>
+      <% if not book.volume.empty? %> volume = "<%= book.volume %>", <br>
+      <% end %>
+      <% if not book.series.empty? %> series = "<%= book.series %>", <br>
+      <% end %>
+      <% if not book.address.empty? %> address = "<%= book.address %>", <br>
+      <% end %>
+      <% if not book.edition.empty? %> edition = "<%= book.edition %>", <br>
+      <% end %>
+      <% if not book.month.empty? %> month = "<%= book.month %>", <br>
+      <% end %>
+      <% if not book.note.empty? %> note = "<%= book.note %>", <br>
+      <% end %>
+      <% if not book.key.empty? %> key = "<%= book.key %>", <br>
+      <% end %>
+      }
+    </p>
+<% end %>
+<% @inproceedings.each do |inproceeding| %>
+    <p>@inproceedings{<%= inproceeding.citation_key %>,<br>
+      author = "<%= inproceeding.author %>", <br>
+      title = "<%= inproceeding.title %>",<br>
+      booktitle = "<%= inproceeding.booktitle %>",<br>
+      year = <%= inproceeding.year %>, <br>
+      <% if not inproceeding.editor.empty? %> editor = "<%= inproceeding.editor %>", <br>  <% end %>
+      <% if not inproceeding.pages.empty? %> pages = "<%= inproceeding.pages %>", <br> <% end %>
+      <% if not inproceeding.organization.empty? %> organization = "<%= inproceeding.organization %>", <br> <% end %>
+      <% if not inproceeding.address.empty? %> address = "<%= inproceeding.address %>", <br> <% end %>
+      <% if not inproceeding.month.empty? %> month = "<%= inproceeding.month %>", <br> <% end %>
+      <% if not inproceeding.note.empty? %> note = "<%= inproceeding.note %>", <br> <% end %>
+      <% if not inproceeding.key.empty? %> key = "<%= inproceeding.key %>", <br> <% end %>
+      }
+    </p>
+<% end %>
+<% @articles.each do |article| %>
+    <p>@article{<%= article.citation_key %>,<br>
+      author = "<%= article.author %>", <br>
+      title = "<%= article.title %>",<br>
+      booktitle = "<%= article.journal %>",<br>
+      year = <%= article.year %>, <br>
+      <% if not article.volume.empty? %> volume = "<%= article.volume %>", <br>
+      <% end %>
+      <% if not article.number<0 %> number = "<%= article.number %>", <br>
+      <% end %>
+      <% if not article.pages.empty? %> pages = "<%= article.pages %>", <br>
+      <% end %>
+      <% if not article.month.empty? %> month = "<%= article.month %>", <br>
+      <% end %>
+      <% if not article.note.empty? %> note = "<%= article.note %>", <br>
+      <% end %>
+      <% if not article.key.empty? %> key = "<%= article.key %>", <br>
+      <% end %>
+      }
+    </p>
 <% end %>

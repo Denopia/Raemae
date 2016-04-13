@@ -20,40 +20,73 @@
   <%= @article.journal %>
 </p>
 
-
 <p>
   <strong>Year:</strong>
   <%= @article.year %>
 </p>
 
-<p>
-  <strong>Volume:</strong>
-  <%= @article.volume %>
-</p>
+<% if not @article.volume.empty? %>
+    <p>
+      <strong>Volume:</strong>
+      <%= @article.volume %>
+    </p>
+<% end %>
 
-<p>
-  <strong>Number:</strong>
-  <%= @article.number %>
-</p>
+<% if not @article.number<0 %>
+    <p>
+      <strong>Number:</strong>
+      <%= @article.number %>
+    </p>
+<% end %>
 
-<p>
-  <strong>Pages:</strong>
-  <%= @article.pages %>
-</p>
+<% if not @article.pages.empty? %>
+    <p>
+      <strong>Pages:</strong>
+      <%= @article.pages %>
+    </p>
+<% end %>
 
-<p>
-  <strong>Month:</strong>
-  <%= @article.month %>
-</p>
+<% if not @article.month.empty? %>
+    <p>
+      <strong>Month:</strong>
+      <%= @article.month %>
+    </p>
+<% end %>
 
-<p>
-  <strong>Note:</strong>
-  <%= @article.note %>
-</p>
+<% if not @article.note.empty? %>
+    <p>
+      <strong>Note:</strong>
+      <%= @article.note %>
+    </p>
+<% end %>
 
-<p>
-  <strong>Volume:</strong>
-  <%= @article.volume %>
+<% if not @article.key.empty? %>
+    <p>
+      <strong>Key:</strong>
+      <%= @article.key %>
+    </p>
+<% end %>
+
+<h3>In BibTeX format:</h3>
+
+<p>@article{<%= @article.citation_key %>,<br>
+  author = "<%= @article.author %>", <br>
+  title = "<%= @article.title %>",<br>
+  booktitle = "<%= @article.journal %>",<br>
+  year = <%= @article.year %>, <br>
+  <% if not @article.volume.empty? %> volume = "<%= @article.volume %>", <br>
+  <% end %>
+  <% if not @article.number<0 %> number = "<%= @article.number %>", <br>
+  <% end %>
+  <% if not @article.pages.empty? %> pages = "<%= @article.pages %>", <br>
+  <% end %>
+  <% if not @article.month.empty? %> month = "<%= @article.month %>", <br>
+  <% end %>
+  <% if not @article.note.empty? %> note = "<%= @article.note %>", <br>
+  <% end %>
+  <% if not @article.key.empty? %> key = "<%= @article.key %>", <br>
+  <% end %>
+  }
 </p>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |

@@ -25,39 +25,70 @@
   <%= @inproceeding.year %>
 </p>
 
-<p>
-  <strong>Editor:</strong>
-  <%= @inproceeding.editor %>
-</p>
+<% if not @inproceeding.editor.empty? %>
+    <p>
+      <strong>Editor:</strong>
+      <%= @inproceeding.editor %>
+    </p>
+<% end %>
 
-<p>
-  <strong>Pages:</strong>
-  <%= @inproceeding.pages %>
-</p>
+<% if not @inproceeding.pages.empty? %>
+    <p>
+      <strong>Pages:</strong>
+      <%= @inproceeding.pages %>
+    </p>
+<% end %>
 
-<p>
-  <strong>Organization:</strong>
-  <%= @inproceeding.organization %>
-</p>
+<% if not @inproceeding.organization.empty? %>
+    <p>
+      <strong>Organization:</strong>
+      <%= @inproceeding.organization %>
+    </p>
+<% end %>
 
-<p>
-  <strong>Address:</strong>
-  <%= @inproceeding.address %>
-</p>
+<% if not @inproceeding.address.empty? %>
+    <p>
+      <strong>Address:</strong>
+      <%= @inproceeding.address %>
+    </p>
+<% end %>
 
-<p>
-  <strong>Month:</strong>
-  <%= @inproceeding.month %>
-</p>
+<% if not @inproceeding.month.empty? %>
+    <p>
+      <strong>Month:</strong>
+      <%= @inproceeding.month %>
+    </p>
+<% end %>
 
-<p>
-  <strong>Note:</strong>
-  <%= @inproceeding.note %>
-</p>
+<% if not @inproceeding.note.empty? %>
+    <p>
+      <strong>Note:</strong>
+      <%= @inproceeding.note %>
+    </p>
+<% end %>
 
-<p>
-  <strong>Key:</strong>
-  <%= @inproceeding.key %>
+<% if not @inproceeding.key.empty? %>
+    <p>
+      <strong>Key:</strong>
+      <%= @inproceeding.key %>
+    </p>
+<% end %>
+
+<h3>In BibTeX format:</h3>
+
+<p>@inproceedings{<%= @inproceeding.citation_key %>,<br>
+  author = "<%= @inproceeding.author %>", <br>
+  title = "<%= @inproceeding.title %>",<br>
+  booktitle = "<%= @inproceeding.booktitle %>",<br>
+  year = <%= @inproceeding.year %>, <br>
+  <% if not @inproceeding.editor.empty? %> editor = "<%= @inproceeding.editor %>", <br>  <% end %>
+  <% if not @inproceeding.pages.empty? %> pages = "<%= @inproceeding.pages %>", <br> <% end %>
+  <% if not @inproceeding.organization.empty? %> organization = "<%= @inproceeding.organization %>", <br> <% end %>
+  <% if not @inproceeding.address.empty? %> address = "<%= @inproceeding.address %>", <br> <% end %>
+  <% if not @inproceeding.month.empty? %> month = "<%= @inproceeding.month %>", <br> <% end %>
+  <% if not @inproceeding.note.empty? %> note = "<%= @inproceeding.note %>", <br> <% end %>
+  <% if not @inproceeding.key.empty? %> key = "<%= @inproceeding.key %>", <br> <% end %>
+  }
 </p>
 
 <%= link_to 'Edit', edit_inproceeding_path(@inproceeding) %> |

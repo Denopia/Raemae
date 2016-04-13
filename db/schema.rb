@@ -18,12 +18,13 @@ ActiveRecord::Schema.define(version: 20160413081722) do
     t.string   "author"
     t.string   "title"
     t.string   "journal"
-    t.integer  "volume"
     t.integer  "year"
+    t.string   "volume"
     t.integer  "number"
     t.string   "pages"
-    t.integer  "month"
+    t.string   "month"
     t.string   "note"
+    t.string   "key"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
@@ -55,7 +56,7 @@ ActiveRecord::Schema.define(version: 20160413081722) do
     t.string   "pages"
     t.string   "organization"
     t.string   "address"
-    t.integer  "month"
+    t.string   "month"
     t.string   "note"
     t.string   "key"
     t.datetime "created_at",   null: false

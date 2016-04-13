@@ -9,9 +9,9 @@ class CreateArticles < ActiveRecord::Migration
       t.integer :year
       t.integer :number
       t.string :pages
-      t.integer :month
+      t.string :month
       t.string :note
-      t.integer :volume
+      t.string :key
 
       t.timestamps null: false
     end
