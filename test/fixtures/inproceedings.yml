@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  citation_key: MyString
+  autor: MyString
+  title: MyString
+  booktitle: MyString
+  year: MyString
+  editor: MyString
+  pages: MyString
+  organization: MyString
+  address: MyString
+  month: 1
+  note: MyString
+  key: MyString
+
+two:
+  citation_key: MyString
+  autor: MyString
+  title: MyString
+  booktitle: MyString
+  year: MyString
+  editor: MyString
+  pages: MyString
+  organization: MyString
+  address: MyString
+  month: 1
+  note: MyString
+  key: MyString

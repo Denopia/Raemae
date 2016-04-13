@@ -1,0 +1,16 @@
+<% @books.each do |book| %>
+  <p>@Book{<%= book.citation_key %>,<br>
+    author = "<%= book.author %>", <br>
+    title = "<%= book.title %>",<br>
+    publisher = "<%= book.publisher %>",<br>
+    year = <%= book.year %>, <br>
+    <% if not book.volume.empty? %> volume = "<%= book.volume %>", <br>  <% end %>
+    <% if not book.series.empty? %> series = "<%= book.series %>", <br> <% end %>
+    <% if not book.address.empty? %> address = "<%= book.address %>", <br> <% end %>
+    <% if not book.edition.empty? %> edition = "<%= book.edition %>", <br> <% end %>
+    <% if not book.month.empty? %> month = "<%= @ook.month %>", <br> <% end %>
+    <% if not book.note.empty? %> note = "<%= @ook.note %>", <br> <% end %>
+    <% if not book.key.empty? %> key = "<%= book.key %>", <br> <% end %>
+    }
+  </p>
+<% end %>

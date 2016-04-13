@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Citation key:</strong>
+  <%= @article.citation_key %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @article.author %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+
+<p>
+  <strong>Journal:</strong>
+  <%= @article.journal %>
+</p>
+
+
+<p>
+  <strong>Year:</strong>
+  <%= @article.year %>
+</p>
+
+<p>
+  <strong>Volume:</strong>
+  <%= @article.volume %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @article.number %>
+</p>
+
+<p>
+  <strong>Pages:</strong>
+  <%= @article.pages %>
+</p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @article.month %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @article.note %>
+</p>
+
+<p>
+  <strong>Volume:</strong>
+  <%= @article.volume %>
+</p>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

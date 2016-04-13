@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160406055407) do
+ActiveRecord::Schema.define(version: 20160413081722) do
+
+  create_table "articles", force: :cascade do |t|
+    t.string   "citation_key"
+    t.string   "author"
+    t.string   "title"
+    t.string   "journal"
+    t.integer  "volume"
+    t.integer  "year"
+    t.integer  "number"
+    t.string   "pages"
+    t.integer  "month"
+    t.string   "note"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "books", force: :cascade do |t|
     t.string   "citation_key"
@@ -24,6 +39,23 @@ ActiveRecord::Schema.define(version: 20160406055407) do
     t.string   "address"
     t.string   "edition"
     t.string   "month"
+    t.string   "note"
+    t.string   "key"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "inproceedings", force: :cascade do |t|
+    t.string   "citation_key"
+    t.string   "author"
+    t.string   "title"
+    t.string   "booktitle"
+    t.integer  "year"
+    t.string   "editor"
+    t.string   "pages"
+    t.string   "organization"
+    t.string   "address"
+    t.integer  "month"
     t.string   "note"
     t.string   "key"
     t.datetime "created_at",   null: false

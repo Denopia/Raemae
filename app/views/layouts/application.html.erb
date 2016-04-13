@@ -2,13 +2,19 @@
 <html>
 <head>
   <title>Referencegenerator</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'application', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="navibar">
+    <%= link_to 'articles', articles_path %>
+    <%= link_to 'inproceedings', inproceedings_path%>
+    <%= link_to 'books', books_path %>
+    <%= link_to 'all', root_path %>
 
-<%= yield %>
+  </div>
+  <%= yield %>
 
 </body>
 </html>

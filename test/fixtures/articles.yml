@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  citation_key: MyString
+  author: MyString
+  title: MyString
+  journal: MyString
+  volume: MyString
+  year: 1
+  number: 1
+  pages: MyString
+  month: 1
+  note: MyString
+  volume: 1
+
+two:
+  citation_key: MyString
+  author: MyString
+  title: MyString
+  journal: MyString
+  volume: MyString
+  year: 1
+  number: 1
+  pages: MyString
+  month: 1
+  note: MyString
+  volume: 1
