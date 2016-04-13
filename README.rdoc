@@ -1,3 +1,0 @@
-== README
-
-https://infinite-journey-12122.herokuapp.com/ 

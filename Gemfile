@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
@@ -33,8 +33,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'rspec-rails', '~> 3.0'
   gem 'sqlite3'
   gem 'byebug'
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required [by cucumber], but highly recommended
+  gem 'database_cleaner'
 end
 
 group :development do
@@ -44,7 +48,13 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
+group :test do
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'simplecov', require: false, :group => :test
+  gem 'coveralls', require: false
+end
 group :production do
   gem 'pg'
   gem 'rails_12factor'

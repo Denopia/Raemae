@@ -8,3 +8,4 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by application tests here...
 end
+
